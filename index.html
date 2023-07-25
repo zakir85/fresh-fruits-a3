@@ -7,6 +7,8 @@
     <!-- tailwind and daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/170220b8eb.js" crossorigin="anonymous"></script>
     <!-- tailwind custom color -->
     <script>
         tailwind.config = {
@@ -14,7 +16,6 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-
               }
             }
           }
@@ -31,17 +32,52 @@
     </style>
 </head>
 <body class="font-poppins">
-    <nav>
+    <!-- Navbar Start here -->
+    <nav class="container mx-auto">
+        <div class="navbar bg-[#f85559] rounded-full"> 
 
+            <div class="navbar-start">
+                <div class="">
+                    <ul class="menu menu-sm mt-2 text-white font-semibold p-2 flex-row">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+            
+            </div>
+
+            <div class="navbar-center my-3">
+                <figure><img src="/images/logo.png" alt=""></figure>
+              <a class="btn btn-ghost normal-case font-black text-white  text-4xl">Fresh Fruits</a>
+            </div>
+
+            <div class="navbar-end px-10">
+                <div class="form-control flex-row">
+                    <input type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto rounded-full" />
+
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 -ml-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+
+                </div>          
+            
+            </div>
+        </div>
     </nav>
-    <Header>
 
+    
+    <Header>
+        <div class="navbar bg-base-100">
+            
+
+           
+          </div>
     </Header>
     <main>
 
     </main>
     <footer>
-        
+
     </footer>
     
 </body>
